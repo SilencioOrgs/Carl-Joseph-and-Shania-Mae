@@ -441,7 +441,7 @@ export function EntourageSection() {
                                     <div>
                                         <p className="text-wedding-gold text-xs tracking-[0.15em] uppercase mb-1" style={{ fontFamily: "var(--font-ornate)" }}>Coin</p>
                                         <p className="text-wedding-pearl text-sm" style={{ fontFamily: "var(--font-body)" }}>
-                                            Sonny Fajardo <span className="text-wedding-gold">-</span> Jen-jen Dimla
+                                            <span className="text-wedding-gold">-</span> Jen-jen Dimla
                                         </p>
                                     </div>
                                 </div>
