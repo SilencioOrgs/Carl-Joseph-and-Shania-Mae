@@ -6,18 +6,19 @@ import { CandleGlowSpots } from "@/components/ui/CandlelightParticles";
 
 export function EntourageSection() {
     const principalSponsors = [
-        { male: "Dr.Benjamin Yu", female: "Ms. Kristine Amin Yu - Darlucio" },
+        { male: "Dr.Benjamin Yu", female: "Ms. Kristine Darlucio" },
         { male: "Mr. John Rojas", female: "Mrs. Loida Rojas" },
         { male: "Mr. Jerry Battung", female: "Mrs. Mary Ann Battung" },
         { male: "Mr. Ryan Ondoy", female: "Mrs. Kitchie Ondoy" },
         { male: "Mr. Jaypee Sacdal", female: "Mrs. Vicky Sacdal" },
-        { male: "Mr. Luis Deytiquez", female: "Mrs. Cynthia Matias" },
         { male: "Mr. Ogie Cando", female: "Mrs. Amy Cando" },
         { male: "Mr. Julius Tiquia", female: "Mrs. Fredizminda Tiquia" },
         { male: "Mr. Froilan Patelo", female: "Mrs. Jenny Patelo" },
-        { male: "Mr. Oscar Gestiada", female: "Ms. Jenny Galves" },
-        { male: "Mr. Ferdinand Patelo", female: "Ms. Jeneth Patelo" },
+        { male: "Mr. Oscar Gestiada", female: "Ms. Jenny Galvez" },
+        { male: "Mr. Ferdinand Patelo", female: "Mrs. Jeneth Patelo" },
         { male: "Mr. Ulysiss Tundag", female: "Ms. Sally Belmonte" },
+        { male: "Mr. Luis Deytiquez", female: "" },
+        { male: "Mr. Victor Rullan", female: "" },
     ];
 
     const bestMenMaidsOfHonor = [
@@ -28,10 +29,10 @@ export function EntourageSection() {
 
     const bridesmaidsGroomsmen = [
         { male: "Emmanuel Tundag", female: "Elleria Faye Tundag" },
-        { male: "Socrates Tundag Jr.", female: "Josephine Gacita" },
-        { male: "Willmar Niño", female: "Jimin Toribio" },
-        { male: "Darwin Deytiquez", female: "Nerliza Quintana" },
-        { male: "Mark Kevin Deytiquez", female: "Ara Bhela Dungca" },
+        { male: "Socrates Tundag Jr", female: "Josephine Gacita" },
+        { male: "Darwin Deytiquez", female: "Roma De Guzman" },
+        { male: "Ivan Sison", female: "Jimin Toribio" },
+        { male: "Willmar Niño", female: "Nerliza Quintana" },
     ];
 
     return (
@@ -183,23 +184,32 @@ export function EntourageSection() {
                                 viewport={{ once: true }}
                                 transition={{ delay: index * 0.03 }}
                             >
-                                <div className="flex items-center justify-center gap-3">
+                                {pair.female ? (
+                                    <div className="flex items-center justify-center gap-3">
+                                        <p
+                                            className="text-wedding-pearl text-sm flex-1 text-right"
+                                            style={{ fontFamily: "var(--font-body)" }}
+                                        >
+                                            {pair.male}
+                                        </p>
+                                        <div className="w-6 h-6 rounded-full border border-wedding-gold/50 flex items-center justify-center flex-shrink-0">
+                                            <span className="text-wedding-gold text-[10px]">&</span>
+                                        </div>
+                                        <p
+                                            className="text-wedding-pearl text-sm flex-1 text-left"
+                                            style={{ fontFamily: "var(--font-body)" }}
+                                        >
+                                            {pair.female}
+                                        </p>
+                                    </div>
+                                ) : (
                                     <p
-                                        className="text-wedding-pearl text-sm flex-1 text-right"
+                                        className="text-wedding-pearl text-sm text-center"
                                         style={{ fontFamily: "var(--font-body)" }}
                                     >
                                         {pair.male}
                                     </p>
-                                    <div className="w-6 h-6 rounded-full border border-wedding-gold/50 flex items-center justify-center flex-shrink-0">
-                                        <span className="text-wedding-gold text-[10px]">&</span>
-                                    </div>
-                                    <p
-                                        className="text-wedding-pearl text-sm flex-1 text-left"
-                                        style={{ fontFamily: "var(--font-body)" }}
-                                    >
-                                        {pair.female}
-                                    </p>
-                                </div>
+                                )}
                                 {/* Bottom accent line */}
                                 <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-1/3 h-px bg-gradient-to-r from-transparent via-wedding-gold/30 to-transparent" />
                             </motion.div>
@@ -297,7 +307,7 @@ export function EntourageSection() {
                                     Arnaldo Sodario
                                 </p>
                                 <p className="text-wedding-pearl text-sm" style={{ fontFamily: "var(--font-body)" }}>
-                                    Tricia Mae Datus
+                                    Jen-Jen Dimla
                                 </p>
                             </div>
                         </OrnateFrame>
@@ -315,7 +325,7 @@ export function EntourageSection() {
                                     Leonard Bobadilla
                                 </p>
                                 <p className="text-wedding-pearl text-sm" style={{ fontFamily: "var(--font-body)" }}>
-                                    Marjorie Xina Baltazar
+                                    Marjorie Baltazar
                                 </p>
                             </div>
                         </OrnateFrame>
@@ -429,19 +439,19 @@ export function EntourageSection() {
                                     <div>
                                         <p className="text-wedding-gold text-xs tracking-[0.15em] uppercase mb-1" style={{ fontFamily: "var(--font-ornate)" }}>Ring</p>
                                         <p className="text-wedding-pearl text-sm" style={{ fontFamily: "var(--font-body)" }}>
-                                            Chester Carvajal <span className="text-wedding-gold">-</span> Erica Cando
+                                            Tricia Mae Datus
                                         </p>
                                     </div>
                                     <div>
                                         <p className="text-wedding-gold text-xs tracking-[0.15em] uppercase mb-1" style={{ fontFamily: "var(--font-ornate)" }}>Bible</p>
                                         <p className="text-wedding-pearl text-sm" style={{ fontFamily: "var(--font-body)" }}>
-                                            Marco Cholo De Leon <span className="text-wedding-gold">-</span> Roma De Guzman
+                                            Ara Bhela Dungca
                                         </p>
                                     </div>
                                     <div>
                                         <p className="text-wedding-gold text-xs tracking-[0.15em] uppercase mb-1" style={{ fontFamily: "var(--font-ornate)" }}>Coin</p>
                                         <p className="text-wedding-pearl text-sm" style={{ fontFamily: "var(--font-body)" }}>
-                                            <span className="text-wedding-gold">-</span> Jen-jen Dimla
+                                            Mark Kevin Deytiquez
                                         </p>
                                     </div>
                                 </div>
