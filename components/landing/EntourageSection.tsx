@@ -7,7 +7,7 @@ import { CandleGlowSpots } from "@/components/ui/CandlelightParticles";
 export function EntourageSection() {
     const principalSponsors = [
         { male: "Dr.Benjamin Yu", female: "Ms. Kristine Darlucio" },
-        { male: "Mr. John Rojas", female: "Mrs. Loida Rojas" },
+        { male: "Mr. John Apruebo", female: "Mrs. Loida Apruebo" },
         { male: "Mr. Jerry Battung", female: "Mrs. Mary Ann Battung" },
         { male: "Mr. Ryan Ondoy", female: "Mrs. Kitchie Ondoy" },
         { male: "Mr. Jaypee Sacdal", female: "Mrs. Vicky Sacdal" },
